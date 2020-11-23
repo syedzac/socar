@@ -1,0 +1,19 @@
+branch-defaults:
+  default:
+    environment: Zeeshan-env
+environment-defaults:
+  Zeeshan-env:
+    branch: null
+    repository: null
+global:
+  application_name: zeeshan
+  default_ec2_keyname: socar_zeeshan
+  default_platform: Multi-container Docker running on 64bit Amazon Linux
+  default_region: ap-southeast-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: socar
+  sc: null
+  workspace_type: Application

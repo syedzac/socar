@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app_socar:
+    build: .
+    container_name: app_socar
+    networks:
+      - socar-network
+
+  webserver:
+    image: 493849651063.dkr.ecr.ap-southeast-1.amazonaws.com/webserver:latest
+    container_name: webserver
+    ports:
+      - "80:80"
+    depends_on:
+      - app_socar
+    networks:
+      - socar-network
+networks:
+  socar-network:
+    driver: bridge
+
