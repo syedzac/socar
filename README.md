@@ -1,5 +1,11 @@
 # STARTER
 
+## Deploy Changes AWS EB
+Install AWS EB CLI
+eb init --profile "AWS Profile Name" (select option 7, Singapore)
+eb deploy
+
+
 ## Setup
 
 Install Adonis
