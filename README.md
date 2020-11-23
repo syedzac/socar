@@ -2,9 +2,13 @@
 
 ## Deploy Changes AWS EB
 Install AWS EB CLI
+```bash
 eb init --profile "AWS Profile Name" (select option 7, Singapore)
+```
+Deploy Changes
+```bash
 eb deploy
-
+```
 
 ## Setup
 
